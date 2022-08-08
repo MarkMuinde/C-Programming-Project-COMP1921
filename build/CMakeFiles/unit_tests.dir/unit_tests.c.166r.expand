@@ -1,0 +1,1730 @@
+
+;; Function user_registration_test (user_registration_test, funcdef_no=0, decl_uid=3357, cgraph_uid=0)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f29f82aa7b8 *.LC0>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:14 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f29f82aa850 *.LC1>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:14 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fopen") [flags 0x41]  <function_decl 0x7f29f84e4000 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:14 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg:DI 60)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:14 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])
+        (reg:DI 60)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:14 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 61)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:15 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:15 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x7f29f84dde00 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:15 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:17 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:17 -1
+     (nil))
+(call_insn 15 14 16 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:17 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 16 15 17 2 (set (reg/f:DI 62)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:17 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 62)
+        (nil)))
+(insn 17 16 18 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 username+0 S8 A64])
+        (reg/f:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:17 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:18 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:18 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:18 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 21 20 22 2 (set (reg/f:DI 63)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:18 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 63)
+        (nil)))
+(insn 22 21 23 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 password+0 S8 A64])
+        (reg/f:DI 63)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:18 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 username+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f29f82aa8e8 *.LC2>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:20 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 password+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f29f82aa980 *.LC3>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:21 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 64)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 password+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:23 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 65)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 username+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:23 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 4 si)
+        (reg:DI 64)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:23 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:23 -1
+     (nil))
+(call_insn 29 28 30 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("registerUser") [flags 0x41]  <function_decl 0x7f29f8524e00 registerUser>) [0 registerUser S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:23 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 30 29 31 2 (set (reg:SI 66)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:23 -1
+     (nil))
+(insn 31 30 32 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 testUserSuccess+0 S4 A32])
+        (reg:SI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:23 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 67)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 testUserSuccess+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 59 [ D.3446 ])
+        (sign_extend:DI (reg:SI 67))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 2 cx)
+        (const_int 25 [0x19])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3446 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil))
+(call_insn 39 38 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:25 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function admin_registration_test (admin_registration_test, funcdef_no=1, decl_uid=3363, cgraph_uid=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f29f82aa7b8 *.LC0>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:32 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f29f82aae40 *.LC4>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:32 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fopen") [flags 0x41]  <function_decl 0x7f29f84e4000 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:32 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg:DI 60)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:32 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])
+        (reg:DI 60)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:32 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 61)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:33 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:33 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x7f29f84dde00 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:33 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:35 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:35 -1
+     (nil))
+(call_insn 15 14 16 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:35 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 16 15 17 2 (set (reg/f:DI 62)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:35 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 62)
+        (nil)))
+(insn 17 16 18 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 usernameAdmin+0 S8 A64])
+        (reg/f:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:35 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:36 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:36 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:36 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 21 20 22 2 (set (reg/f:DI 63)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:36 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 63)
+        (nil)))
+(insn 22 21 23 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 passwordAdmin+0 S8 A64])
+        (reg/f:DI 63)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:36 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 usernameAdmin+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f29f82aaed8 *.LC5>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:38 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 passwordAdmin+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f29f82aa980 *.LC3>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:39 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 64)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 passwordAdmin+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:41 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 65)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 usernameAdmin+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:41 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 4 si)
+        (reg:DI 64)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:41 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:41 -1
+     (nil))
+(call_insn 29 28 30 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("registerAdmin") [flags 0x41]  <function_decl 0x7f29f8524600 registerAdmin>) [0 registerAdmin S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:41 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 30 29 31 2 (set (reg:SI 66)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:41 -1
+     (nil))
+(insn 31 30 32 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 testAdminSuccess+0 S4 A32])
+        (reg:SI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:41 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 67)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 testAdminSuccess+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 59 [ D.3451 ])
+        (sign_extend:DI (reg:SI 67))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 2 cx)
+        (const_int 43 [0x2b])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3451 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil))
+(call_insn 39 38 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:43 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function login_test_user (login_test_user, funcdef_no=2, decl_uid=3369, cgraph_uid=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f29f82aa7b8 *.LC0>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:51 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f29f82aa850 *.LC1>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:51 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fopen") [flags 0x41]  <function_decl 0x7f29f84e4000 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:51 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg:DI 60)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:51 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])
+        (reg:DI 60)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:51 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 61)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:52 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:52 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x7f29f84dde00 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:52 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:54 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:54 -1
+     (nil))
+(call_insn 15 14 16 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:54 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 16 15 17 2 (set (reg/f:DI 62)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:54 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 62)
+        (nil)))
+(insn 17 16 18 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 username+0 S8 A64])
+        (reg/f:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:54 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:55 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:55 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:55 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 21 20 22 2 (set (reg/f:DI 63)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:55 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 63)
+        (nil)))
+(insn 22 21 23 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 password+0 S8 A64])
+        (reg/f:DI 63)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:55 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 username+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f29f82aa8e8 *.LC2>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:57 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 password+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f29f82aa980 *.LC3>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:58 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 64)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 password+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:60 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 65)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 username+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:60 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 4 si)
+        (reg:DI 64)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:60 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:60 -1
+     (nil))
+(call_insn 29 28 30 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("registerUser") [flags 0x41]  <function_decl 0x7f29f8524e00 registerUser>) [0 registerUser S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:60 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 30 29 31 2 (set (reg:SI 66)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:60 -1
+     (nil))
+(insn 31 30 32 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 registrationTest+0 S4 A32])
+        (reg:SI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:60 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 67)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 password+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:61 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 68)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 username+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:61 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:DI 4 si)
+        (reg:DI 67)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:61 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (reg:DI 68)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:61 -1
+     (nil))
+(call_insn 36 35 37 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("loginUser") [flags 0x41]  <function_decl 0x7f29f8524f00 loginUser>) [0 loginUser S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:61 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 37 36 38 2 (set (reg:SI 69)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:61 -1
+     (nil))
+(insn 38 37 39 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 loginTest+0 S4 A32])
+        (reg:SI 69)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:61 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:SI 70)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 loginTest+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 59 [ D.3454 ])
+        (sign_extend:DI (reg:SI 70))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:DI 2 cx)
+        (const_int 62 [0x3e])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil))
+(insn 44 43 45 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3454 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil))
+(insn 45 44 46 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil))
+(call_insn 46 45 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:62 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function login_test_admin (login_test_admin, funcdef_no=3, decl_uid=3376, cgraph_uid=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f29f82aa7b8 *.LC0>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:69 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f29f82aae40 *.LC4>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:69 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fopen") [flags 0x41]  <function_decl 0x7f29f84e4000 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:69 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg:DI 60)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:69 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])
+        (reg:DI 60)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:69 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 61)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 file+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:70 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:70 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x7f29f84dde00 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:70 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:72 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:72 -1
+     (nil))
+(call_insn 15 14 16 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:72 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 16 15 17 2 (set (reg/f:DI 62)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:72 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 62)
+        (nil)))
+(insn 17 16 18 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 usernameAdmin+0 S8 A64])
+        (reg/f:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:72 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:73 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:73 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:73 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 21 20 22 2 (set (reg/f:DI 63)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:73 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 63)
+        (nil)))
+(insn 22 21 23 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 passwordAdmin+0 S8 A64])
+        (reg/f:DI 63)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:73 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 usernameAdmin+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f29f82aa8e8 *.LC2>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:75 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 passwordAdmin+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f29f82aa980 *.LC3>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:76 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 64)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 passwordAdmin+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:78 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 65)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 usernameAdmin+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:78 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 4 si)
+        (reg:DI 64)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:78 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:78 -1
+     (nil))
+(call_insn 29 28 30 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("registerAdmin") [flags 0x41]  <function_decl 0x7f29f8524600 registerAdmin>) [0 registerAdmin S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:78 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 30 29 31 2 (set (reg:SI 66)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:78 -1
+     (nil))
+(insn 31 30 32 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 registrationTest+0 S4 A32])
+        (reg:SI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:78 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 67)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 passwordAdmin+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:79 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 68)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 usernameAdmin+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:79 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:DI 4 si)
+        (reg:DI 67)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:79 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (reg:DI 68)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:79 -1
+     (nil))
+(call_insn 36 35 37 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("loginAdmin") [flags 0x41]  <function_decl 0x7f29f8524700 loginAdmin>) [0 loginAdmin S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:79 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 37 36 38 2 (set (reg:SI 69)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:79 -1
+     (nil))
+(insn 38 37 39 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 loginTest+0 S4 A32])
+        (reg:SI 69)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:79 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:SI 70)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 loginTest+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 59 [ D.3455 ])
+        (sign_extend:DI (reg:SI 70))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:DI 2 cx)
+        (const_int 80 [0x50])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil))
+(insn 44 43 45 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3455 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil))
+(insn 45 44 46 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil))
+(call_insn 46 45 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:80 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function find_book_by_title_test (find_book_by_title_test, funcdef_no=4, decl_uid=3383, cgraph_uid=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:145 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:145 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:145 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg/f:DI 61)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:145 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 61)
+        (nil)))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 findTitle+0 S8 A64])
+        (reg/f:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:145 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 findTitle+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f29f82bebe0 *.LC6>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:146 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 62)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 findTitle+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 5 di)
+        (reg:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(call_insn 13 12 14 2 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("find_book_by_title") [flags 0x41]  <function_decl 0x7f29f8529800 find_book_by_title>) [0 find_book_by_title S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 2 (set (reg:TI 60 [ D.3424 ])
+        (reg:TI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:TI 63)
+        (reg:TI 60 [ D.3424 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:TI 64)
+        (reg:TI 60 [ D.3424 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 65)
+        (subreg:DI (reg:TI 63) 0)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 66)
+        (subreg:DI (reg:TI 64) 8)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 4 si)
+        (reg:DI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printBooks") [flags 0x41]  <function_decl 0x7f29f8529f00 printBooks>) [0 printBooks S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:DI 4 si))
+        (expr_list:REG_DEP_TRUE (use (reg:DI 5 di))
+            (nil))))
+(insn 22 21 23 2 (set (reg:SI 67)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 testTitleSuccess+0 S4 A32])
+        (reg:SI 67)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:147 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 68)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 testTitleSuccess+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 59 [ D.3456 ])
+        (sign_extend:DI (reg:SI 68))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 2 cx)
+        (const_int 148 [0x94])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3456 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 5 di)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil))
+(call_insn 31 30 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:148 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function find_book_by_author_test (find_book_by_author_test, funcdef_no=5, decl_uid=3387, cgraph_uid=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:154 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:154 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:154 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg/f:DI 61)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:154 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 61)
+        (nil)))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 findAuthor+0 S8 A64])
+        (reg/f:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:154 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 findAuthor+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f29f82d1000 *.LC7>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:155 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 62)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 findAuthor+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 5 di)
+        (reg:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(call_insn 13 12 14 2 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("find_book_by_author") [flags 0x41]  <function_decl 0x7f29f8529900 find_book_by_author>) [0 find_book_by_author S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 2 (set (reg:TI 60 [ D.3426 ])
+        (reg:TI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:TI 63)
+        (reg:TI 60 [ D.3426 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:TI 64)
+        (reg:TI 60 [ D.3426 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 65)
+        (subreg:DI (reg:TI 63) 0)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 66)
+        (subreg:DI (reg:TI 64) 8)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 4 si)
+        (reg:DI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printBooks") [flags 0x41]  <function_decl 0x7f29f8529f00 printBooks>) [0 printBooks S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:DI 4 si))
+        (expr_list:REG_DEP_TRUE (use (reg:DI 5 di))
+            (nil))))
+(insn 22 21 23 2 (set (reg:SI 67)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 testAuthorSuccess+0 S4 A32])
+        (reg:SI 67)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:156 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 59 [ findAuthor.0 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 findAuthor+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:157 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:157 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 2 cx)
+        (const_int 157 [0x9d])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:157 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:157 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ findAuthor.0 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:157 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:157 -1
+     (nil))
+(call_insn 30 29 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:157 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function find_book_by_year_test (find_book_by_year_test, funcdef_no=6, decl_uid=3391, cgraph_uid=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 findYear+0 S4 A32])
+        (const_int 2000 [0x7d0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:164 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 5 di)
+        (const_int 2000 [0x7d0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("find_book_by_year") [flags 0x41]  <function_decl 0x7f29f8529a00 find_book_by_year>) [0 find_book_by_year S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil)
+    (expr_list:REG_BR_PRED (use (reg:SI 5 di))
+        (nil)))
+(insn 8 7 9 2 (set (reg:TI 60 [ D.3428 ])
+        (reg:TI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:TI 61)
+        (reg:TI 60 [ D.3428 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:TI 62)
+        (reg:TI 60 [ D.3428 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 63)
+        (subreg:DI (reg:TI 61) 0)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 64)
+        (subreg:DI (reg:TI 62) 8)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (reg:DI 63)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 4 si)
+        (reg:DI 64)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(call_insn 15 14 16 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printBooks") [flags 0x41]  <function_decl 0x7f29f8529f00 printBooks>) [0 printBooks S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:DI 4 si))
+        (expr_list:REG_DEP_TRUE (use (reg:DI 5 di))
+            (nil))))
+(insn 16 15 17 2 (set (reg:SI 65)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 testYearSuccess+0 S4 A32])
+        (reg:SI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:165 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 66)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 testYearSuccess+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 59 [ D.3459 ])
+        (sign_extend:DI (reg:SI 66))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 2 cx)
+        (const_int 166 [0xa6])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3459 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 5 di)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil))
+(call_insn 25 24 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:166 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function borrow_book_test (borrow_book_test, funcdef_no=7, decl_uid=3395, cgraph_uid=7)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:175 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:175 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:175 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg/f:DI 60)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:175 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 60)
+        (nil)))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 username+0 S8 A64])
+        (reg/f:DI 60)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:175 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:176 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:176 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:176 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 13 12 14 2 (set (reg/f:DI 61)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:176 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 61)
+        (nil)))
+(insn 14 13 15 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 title+0 S8 A64])
+        (reg/f:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:176 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:177 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:177 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:177 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 18 17 19 2 (set (reg/f:DI 62)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:177 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 62)
+        (nil)))
+(insn 19 18 20 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 author+0 S8 A64])
+        (reg/f:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:177 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 username+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f29f82aa8e8 *.LC2>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:180 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 title+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f29f82bebe0 *.LC6>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:181 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 author+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f29f82d1000 *.LC7>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:182 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 year+0 S4 A32])
+        (const_int 2000 [0x7d0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:183 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 63)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 year+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 64)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 author+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 65)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 title+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 66)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 username+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 2 cx)
+        (reg:SI 63)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 1 dx)
+        (reg:DI 64)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 4 si)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:DI 5 di)
+        (reg:DI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(call_insn 32 31 33 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("borrow") [flags 0x41]  <function_decl 0x7f29f8529d00 borrow>) [0 borrow S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 33 32 34 2 (set (reg:SI 67)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 34 33 35 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 testBorrowSuccess+0 S4 A32])
+        (reg:SI 67)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:185 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 68)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 testBorrowSuccess+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 59 [ D.3460 ])
+        (sign_extend:DI (reg:SI 68))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:DI 2 cx)
+        (const_int 186 [0xba])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3460 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:DI 5 di)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil))
+(call_insn 42 41 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:186 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function return_book_test (return_book_test, funcdef_no=8, decl_uid=3404, cgraph_uid=8)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:195 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:195 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:195 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 8 7 9 2 (set (reg/f:DI 60)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:195 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 60)
+        (nil)))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 username+0 S8 A64])
+        (reg/f:DI 60)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:195 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:196 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:196 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:196 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 13 12 14 2 (set (reg/f:DI 61)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:196 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 61)
+        (nil)))
+(insn 14 13 15 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 title+0 S8 A64])
+        (reg/f:DI 61)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:196 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:197 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 5 di)
+        (const_int 50 [0x32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:197 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x7f29f8413d00 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:197 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (nil))))
+(insn 18 17 19 2 (set (reg/f:DI 62)
+        (reg:DI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:197 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 62)
+        (nil)))
+(insn 19 18 20 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 author+0 S8 A64])
+        (reg/f:DI 62)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:197 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 username+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f29f82aa8e8 *.LC2>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:200 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 title+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f29f82bebe0 *.LC6>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:201 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 author+0 S8 A64])
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f29f82d1000 *.LC7>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:202 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 year+0 S4 A32])
+        (const_int 2000 [0x7d0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:203 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 63)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 year+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 64)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 author+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 65)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 title+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 66)
+        (mem/f/c:DI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 username+0 S8 A64])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 2 cx)
+        (reg:SI 63)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 1 dx)
+        (reg:DI 64)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 4 si)
+        (reg:DI 65)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:DI 5 di)
+        (reg:DI 66)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(call_insn 32 31 33 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("return_book") [flags 0x41]  <function_decl 0x7f29f8529e00 return_book>) [0 return_book S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_BR_PRED (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 33 32 34 2 (set (reg:SI 67)
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 34 33 35 2 (set (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 testReturnSuccess+0 S4 A32])
+        (reg:SI 67)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:205 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 68)
+        (mem/c:SI (plus:DI (reg/f:DI 54 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 testReturnSuccess+0 S4 A32])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 59 [ D.3461 ])
+        (sign_extend:DI (reg:SI 68))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 37 r8)
+        (const_int 20 [0x14])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:DI 2 cx)
+        (const_int 206 [0xce])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 4 si)
+        (reg:DI 59 [ D.3461 ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:DI 5 di)
+        (const_int 1 [0x1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil))
+(call_insn 42 41 0 2 (call (mem:QI (symbol_ref:DI ("UnityAssertEqualNumber") [flags 0x41]  <function_decl 0x7f29f81ff000 UnityAssertEqualNumber>) [0 UnityAssertEqualNumber S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:206 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 1 dx))
+                (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 2 cx))
+                    (expr_list:REG_BR_PRED (use (reg:SI 37 r8))
+                        (nil)))))))
+
+;; Function setUp (setUp, funcdef_no=9, decl_uid=3342, cgraph_uid=9)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 0 2 NOTE_INSN_FUNCTION_BEG)
+
+;; Function tearDown (tearDown, funcdef_no=10, decl_uid=3344, cgraph_uid=10)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 0 2 NOTE_INSN_FUNCTION_BEG)
+
+;; Function main (main, funcdef_no=11, decl_uid=3417, cgraph_uid=11)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+deleting block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f29f82e5558 *.LC8>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:220 -1
+     (nil))
+(call_insn 6 5 7 2 (call (mem:QI (symbol_ref:DI ("UnityBegin") [flags 0x41]  <function_decl 0x7f29f81ea300 UnityBegin>) [0 UnityBegin S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:220 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 1 dx)
+        (const_int 222 [0xde])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:222 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f29f82e55f0 *.LC9>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:222 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("user_registration_test") [flags 0x3]  <function_decl 0x7f29f8267600 user_registration_test>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:222 -1
+     (nil))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:222 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 11 10 12 2 (set (reg:SI 1 dx)
+        (const_int 223 [0xdf])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:223 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f29f82e5688 *.LC10>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:223 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("admin_registration_test") [flags 0x3]  <function_decl 0x7f29f8267700 admin_registration_test>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:223 -1
+     (nil))
+(call_insn 14 13 15 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:223 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 15 14 16 2 (set (reg:SI 1 dx)
+        (const_int 224 [0xe0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:224 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f29f82e5720 *.LC11>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:224 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("login_test_user") [flags 0x3]  <function_decl 0x7f29f8267900 login_test_user>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:224 -1
+     (nil))
+(call_insn 18 17 19 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:224 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 19 18 20 2 (set (reg:SI 1 dx)
+        (const_int 225 [0xe1])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:225 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f29f82e57b8 *.LC12>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:225 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("login_test_admin") [flags 0x3]  <function_decl 0x7f29f8267a00 login_test_admin>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:225 -1
+     (nil))
+(call_insn 22 21 23 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:225 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 23 22 24 2 (set (reg:SI 1 dx)
+        (const_int 228 [0xe4])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:228 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f29f82e5850 *.LC13>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:228 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("find_book_by_title_test") [flags 0x3]  <function_decl 0x7f29f8267b00 find_book_by_title_test>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:228 -1
+     (nil))
+(call_insn 26 25 27 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:228 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 27 26 28 2 (set (reg:SI 1 dx)
+        (const_int 229 [0xe5])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:229 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f29f82e58e8 *.LC14>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:229 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("find_book_by_author_test") [flags 0x3]  <function_decl 0x7f29f8267c00 find_book_by_author_test>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:229 -1
+     (nil))
+(call_insn 30 29 31 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:229 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 31 30 32 2 (set (reg:SI 1 dx)
+        (const_int 230 [0xe6])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:230 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f29f82e5980 *.LC15>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:230 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("find_book_by_year_test") [flags 0x3]  <function_decl 0x7f29f8267d00 find_book_by_year_test>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:230 -1
+     (nil))
+(call_insn 34 33 35 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:230 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 35 34 36 2 (set (reg:SI 1 dx)
+        (const_int 231 [0xe7])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:231 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f29f82e5a18 *.LC16>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:231 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("borrow_book_test") [flags 0x3]  <function_decl 0x7f29f8267e00 borrow_book_test>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:231 -1
+     (nil))
+(call_insn 38 37 39 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:231 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(insn 39 38 40 2 (set (reg:SI 1 dx)
+        (const_int 232 [0xe8])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:232 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f29f82e5ab0 *.LC17>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:232 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:DI 5 di)
+        (symbol_ref:DI ("return_book_test") [flags 0x3]  <function_decl 0x7f29f8267f00 return_book_test>)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:232 -1
+     (nil))
+(call_insn 42 41 43 2 (call (mem:QI (symbol_ref:DI ("UnityDefaultTestRun") [flags 0x41]  <function_decl 0x7f29f81ea700 UnityDefaultTestRun>) [0 UnityDefaultTestRun S1 A8])
+        (const_int 0 [0])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:232 -1
+     (nil)
+    (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 5 di))
+        (expr_list:REG_FRAME_RELATED_EXPR (use (reg:DI 4 si))
+            (expr_list:REG_BR_PRED (use (reg:SI 1 dx))
+                (nil)))))
+(call_insn 43 42 44 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnityEnd") [flags 0x41]  <function_decl 0x7f29f81ea400 UnityEnd>) [0 UnityEnd S1 A8])
+            (const_int 0 [0]))) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:234 -1
+     (nil)
+    (nil))
+(insn 44 43 47 2 (set (reg:SI 59 [ D.3462 ])
+        (reg:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:234 -1
+     (nil))
+(insn 47 44 51 2 (set (reg:SI 60 [ <retval> ])
+        (reg:SI 59 [ D.3462 ])) -1
+     (nil))
+(insn 51 47 54 2 (set (reg/i:SI 0 ax)
+        (reg:SI 60 [ <retval> ])) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:235 -1
+     (nil))
+(insn 54 51 0 2 (use (reg/i:SI 0 ax)) /home/cserv1_a/soc_msc/sc19msmm/Downloads/comp1921/unit_tests.c:235 -1
+     (nil))
